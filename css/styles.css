@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+.top-bar-image{    
+    object-fit: contain;
+    width: 100vw;
+}
+#order-button-load-page{
+    position: absolute;
+    top: 3vw;
+    right:5vw;
+    font-family: "Permanent Marker"; 
+    font-size: larger;
+    background-color: #DE1E27;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border-bottom: 4px solid black;
+    border-right: 2px solid black;
+    border-left: none;
+    border-top: none;
+    color: white;
+    cursor: pointer;
+}
+#order-button-load-page:active {
+    transform: translateY(4px);
+  }
+.load-page-text{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Fredoka One';
+}
+.load-page-text h1{
+    width: 50vw;
+    text-align: center;
+    margin: auto;
+    font-family: 'Pangolin' ;
+}
