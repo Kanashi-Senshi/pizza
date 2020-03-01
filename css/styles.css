@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    line-height: 1.5;
 }
 .top-bar-image{    
     object-fit: contain;
@@ -33,14 +32,80 @@
     transform: translateY(4px);
   }
 .load-page-text{
-    width: 50%;
     text-align: center;
     margin: auto;
     font-family: 'Fredoka One';
+    line-height: 2.0;
 }
 .load-page-text h1{
-    width: 50vw;
+    width: 80vw;
     text-align: center;
     margin: auto;
     font-family: 'Pangolin' ;
+}
+/* The order css */
+.order-page {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /* overflow-y: initial !important; */
+  }
+  
+  /* Modal Content/Box */
+  .order-page-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 25px;
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+    top: 20px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .order-page-pizza-menu h1{
+    border-bottom: 4px solid #c94e4e;
+}
+  .order-page-pizza-menu{
+      float: left;
+      width: 60%;
+}
+.order-page-order-summary{
+  position: sticky;
+  float: right;
+  width: 35%;
+  overflow-y: scroll;
+  border:  1px solid black;
+  min-height: 250px;
+  height: auto;
+  text-align: center;
+  top: 20%;  
+}
+.order-page-order-summary h3{
+  text-decoration: underline;
+}
+.order-page-order-header{
+  padding: 20px;
 }
