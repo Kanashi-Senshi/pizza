@@ -132,43 +132,52 @@
             <div id="select-page-mediterranean" class="select-page-mediterranean">  
                 <h1></h1> 
                 <h3>Pizza crust size selection</h3>
-                <input type="radio" id="small-crust" name="small-crust">
-                <label for="small-crust">Small 8" crust</label><br>
-                <input type="radio" id="medium-crust" name="medium-crust">
-                <label for="medium-crust">Medium 12" crust</label><br>
-                <input type="radio" id="large-crust" name="large-crust">
-                <label for="large-crust">Large 18" crust</label><br>
-                <input type="radio" id="gluten-crust" name="gluten-crust">
-                <label for="gluten-crust">10" crust</label><br>           
-                <h3>Pizza crust selection</h3>                
-                <input type="checkbox" class="white-crust" name="white-crust">
-                <label for="white-crust">White wood grilled crust</label><br>
-                <input type="checkbox" class="whole-wheat-crust" name="whole-wheat-crust">
-                <label for="whole-wheat-crust">Whole wheat wood grilled thin crust</label><br>
-                <input type="checkbox" class="gluten-free-crust" name="gluten-free-crust">
-                <label for="gluten-free-crust">Gluten free wood grilled crust</label><br>
-                <h3>Additional toppings</h3>                
-                <input type="checkbox" class="mushroom" name="mushroom">
-                <label for="mushroom">Mushroom</label><br>
-                <input type="checkbox" class="scalion" name="scalion">
-                <label for="scalion">Scalions</label><br>
-                <input type="checkbox" class="pineapple" name="pineapple">
-                <label for="pineapple">Pineapple</label><br>
-                <input type="checkbox" class="baby-aragula" name="baby-aragula">
-                <label for="baby-aragula">Baby aragula</label><br>
-                <input type="checkbox" class="bacon" name="bacon">
-                <label for="bacon">Bacon</label><br>
-                <input type="checkbox" class="feta" name="feta">
-                <label for="feta">Feta</label><br>
-                <input type="checkbox" class="meatballs" name="meatballs">
-                <label for="meatballs"> Housemade meatballs</label><br>
-                <input type="checkbox" class="walnuts" name="walnuts">
-                <label for="walnuts">Candied walnuts</label><br>
-                <input type="checkbox" class="pears" name="pears">
-                <label for="pears">Slices Pears</label><br>
-                <input type="checkbox" class="pesto" name="pesto">
-                <label for="pesto">Fresh basil pesto</label><br>                
-            </div>            
+                <div class="crust-size-selection">
+                    <input type="radio" id="small-crust" name="crust">
+                    <label for="small-crust">Small 8" crust</label><br>
+                    <input type="radio" id="medium-crust" name="crust">
+                    <label for="medium-crust">Medium 12" crust</label><br>
+                    <input type="radio" id="large-crust" name="crust">
+                    <label for="large-crust">Large 18" crust</label><br>
+                    <input type="radio" id="gluten-crust" name="crust">
+                    <label for="gluten-crust">10" crust</label><br>     
+                </div>      
+                <h3>Pizza crust selection</h3>  
+                <div class="crust-selection">              
+                    <input type="radio" class="crust-selection" id="white"name="crust-selection">White wood grilled crust<br>
+                    <!-- <label for="white-crust">White wood grilled crust</label><br></p>*/ -->
+                    <input type="radio" class="crust-selection" id="wheat"name="crust-selection">Whole wheat wood grilled thin crust<br>
+                        <!-- label for="whole-wheat-crust">Whole wheat wood grilled thin crust</label><br> -->
+                    <input type="radio" class="crust-selection" id="gluten" name="crust-selection">Gluten free wood grilled crust<br>
+                    <!-- <label for="gluten-free-crust">Gluten free wood grilled crust</label><br> -->
+                </div>
+                <h3>Additional toppings</h3>        
+                <div class=" additional-topppings-selection">      
+                    <input type="checkbox" class="mushroom" name="mushroom">
+                    <label for="mushroom">Mushroom</label><br>
+                    <input type="checkbox" class="scalion" name="scalion">
+                    <label for="scalion">Scalions</label><br>
+                    <input type="checkbox" class="pineapple" name="pineapple">
+                    <label for="pineapple">Pineapple</label><br>
+                    <input type="checkbox" class="baby-aragula" name="baby-aragula">
+                    <label for="baby-aragula">Baby aragula</label><br>
+                    <input type="checkbox" class="bacon" name="bacon">
+                    <label for="bacon">Bacon</label><br>
+                    <input type="checkbox" class="feta" name="feta">
+                    <label for="feta">Feta</label><br>
+                    <input type="checkbox" class="meatballs" name="meatballs">
+                    <label for="meatballs"> Housemade meatballs</label><br>
+                    <input type="checkbox" class="walnuts" name="walnuts">
+                    <label for="walnuts">Candied walnuts</label><br>
+                    <input type="checkbox" class="pears" name="pears">
+                    <label for="pears">Slices Pears</label><br>
+                    <input type="checkbox" class="pesto" name="pesto">
+                    <label for="pesto">Fresh basil pesto</label><br>     
+                </div>           
+            </div>   
+            <div class="shop-item-details">
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>         
          </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>

@@ -1,3 +1,4 @@
+//to display the modal order page
 var orderModal = document.getElementById("my-modal-order-page");
 var orderBtn = document.getElementById("order-button-load-page");
 var orderSpan = document.getElementsByClassName("close")[0];
@@ -12,6 +13,7 @@ window.onclick = function(event) {
     orderModal.style.display = "none";
   }
 }
+// to display the select toppings page
 var selectModal = document.getElementById("my-modal-select-page");
 var selectSpan = document.getElementsByClassName("select-page-close")[0];
 selectSpan.onclick = function() {
@@ -30,7 +32,7 @@ $("document").ready(function(){
     $("#my-modal-select-page h1").append(a.clone());
   })
 });
-
+// to rmove cart items
 var removeCartItemButtons = document.getElementsByClassName("btn-danger")
 for (var i = 0;i < removeCartItemButtons.length; i++){
   var button = removeCartItemButtons[i];
@@ -44,8 +46,13 @@ for (var i = 0;i < removeCartItemButtons.length; i++){
     var input = quantityInputs[i];
     input.addEventListener("change", quantityChanged)
   }
+  var addToCartButtons = document.getElementsByClassName("shop-item-button");
+  for (var i = 0;i < addToCartButtons.length; i++){
+    var button = addToCartButtons[i];
+    button.addEventListener("click", addToCartClicked)
+  }
 }
-
+//to calculate totals
 function quantityChanged(event){
   var input = event.target
   if (isNaN(input, value) || input.value < 1){
@@ -54,7 +61,16 @@ function quantityChanged(event){
   updateCartTotal();
 
 }
-
+//to add items to cart
+function addToCartClicked(event){
+ var button = event.target;
+ var shopItem = button.parentElement.parentElement;
+ var ttt = 0;
+ var title = shopItem.getElementsByClassName("")[0].innerText
+  console.log(crustSize)
+}
+// to ensue
+//to update cart total
 function updateCartTotal(){
   var cartItemContainer = document.getElementsByClassName("cart-items")[0];
   var cartRows = cartItemContainer.getElementsByClassName("cart-row"); [0]
