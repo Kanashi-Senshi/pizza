@@ -65,9 +65,8 @@ function quantityChanged(event){
 function addToCartClicked(event){
  var button = event.target;
  var shopItem = button.parentElement.parentElement;
- var ttt = 0;
- var title = shopItem.getElementsByClassName("")[0].innerText
-  console.log(crustSize)
+ var crust = (".crust-size-selection:selected").val();
+ console.log("thi is crust ", crust);
 }
 // to ensue
 //to update cart total
