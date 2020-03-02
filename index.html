@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
@@ -45,8 +46,33 @@
                     <p><button type="button" id="pickup-button-load-page">Pickup</button> or <button type="button" id="deliver-button-load-page">Deliver</button></p>
             </div>
             <div class="order-page-order-summary">
-                <h3>Order summary</h3>
-                <ul></ul>
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-item-column">
+                            <span class="cart-item-title">Soda</span>
+                        </div>
+                        <span class="cart-price cart-column">Kshs 100</span>
+                        <div class="cart-quantity cart-column">
+                            <input class="cart-quantity-input" type="number" value="5">
+                            <button class="btn btn-danger" type="button">REMOVE</button>                        
+                        </div>
+                        <div class="cart-row">
+                            <div class="cart-item-column">
+                                <span class="cart-item-title">Soda</span>
+                            </div>
+                            <span class="cart-price cart-column">Kshs 100</span>
+                            <div class="cart-quantity cart-column">
+                                <input class="cart-quantity-input" type="number" value="1">
+                                <button class="btn btn-danger" type="button">REMOVE</button>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">100</span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">Purchase</button>
             </div>
             <div class="order-page-pizza-menu">
                 <h1>MEATY PIZZA</h1>
@@ -94,12 +120,56 @@
                 <p>Beers(Ale, lager, stout, pilsner, porter, Irishi red ale)</p>
                 <p>Wine(white, red)</p>
                 <p>Ice cream(2,3,4 scoops)</p>
+                <div class="order-page-add-to-cart">
+                    
+                </div>
             </div>
         </div>
     </div>
     <div class="select-page" id="my-modal-select-page">
-
-    </div>
+        <div class="select-page-content">
+            <span class="select-page-close">&times;</span>
+            <div id="select-page-mediterranean" class="select-page-mediterranean">  
+                <h1></h1> 
+                <h3>Pizza crust size selection</h3>
+                <input type="radio" id="small-crust" name="small-crust">
+                <label for="small-crust">Small 8" crust</label><br>
+                <input type="radio" id="medium-crust" name="medium-crust">
+                <label for="medium-crust">Medium 12" crust</label><br>
+                <input type="radio" id="large-crust" name="large-crust">
+                <label for="large-crust">Large 18" crust</label><br>
+                <input type="radio" id="gluten-crust" name="gluten-crust">
+                <label for="gluten-crust">10" crust</label><br>           
+                <h3>Pizza crust selection</h3>                
+                <input type="checkbox" class="white-crust" name="white-crust">
+                <label for="white-crust">White wood grilled crust</label><br>
+                <input type="checkbox" class="whole-wheat-crust" name="whole-wheat-crust">
+                <label for="whole-wheat-crust">Whole wheat wood grilled thin crust</label><br>
+                <input type="checkbox" class="gluten-free-crust" name="gluten-free-crust">
+                <label for="gluten-free-crust">Gluten free wood grilled crust</label><br>
+                <h3>Additional toppings</h3>                
+                <input type="checkbox" class="mushroom" name="mushroom">
+                <label for="mushroom">Mushroom</label><br>
+                <input type="checkbox" class="scalion" name="scalion">
+                <label for="scalion">Scalions</label><br>
+                <input type="checkbox" class="pineapple" name="pineapple">
+                <label for="pineapple">Pineapple</label><br>
+                <input type="checkbox" class="baby-aragula" name="baby-aragula">
+                <label for="baby-aragula">Baby aragula</label><br>
+                <input type="checkbox" class="bacon" name="bacon">
+                <label for="bacon">Bacon</label><br>
+                <input type="checkbox" class="feta" name="feta">
+                <label for="feta">Feta</label><br>
+                <input type="checkbox" class="meatballs" name="meatballs">
+                <label for="meatballs"> Housemade meatballs</label><br>
+                <input type="checkbox" class="walnuts" name="walnuts">
+                <label for="walnuts">Candied walnuts</label><br>
+                <input type="checkbox" class="pears" name="pears">
+                <label for="pears">Slices Pears</label><br>
+                <input type="checkbox" class="pesto" name="pesto">
+                <label for="pesto">Fresh basil pesto</label><br>                
+            </div>            
+         </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
