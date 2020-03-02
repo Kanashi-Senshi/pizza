@@ -65,8 +65,6 @@ function quantityChanged(event){
 function addToCartClicked(event){
  var button = event.target;
  var shopItem = button.parentElement.parentElement;
- var crust = (".crust-size-selection:selected").val();
- console.log("thi is crust ", crust);
 }
 // to ensue
 //to update cart total
@@ -86,3 +84,4 @@ function updateCartTotal(){
   total = Math.round(total *100)/100;
   document.getElementsByClassName("cart-total-price")[0].innertext = "Kshs " + total;
 }
+$(document)
